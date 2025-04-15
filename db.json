@@ -1,98 +1,108 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "username": "jean.pierre",
-      "email": "jp@example.com",
-      "password": "password123",
-      "firstName": "Jean-Pierre",
-      "lastName": "Dupont",
-      "favorites": [1, 3]
-    },
-    {
-      "id": 2,
-      "username": "sophie.teacher",
-      "email": "sophie@example.com",
-      "password": "password123",
-      "firstName": "Sophie",
-      "lastName": "Martin",
-      "favorites": [2]
-    },
-    {
-      "id": 3,
-      "username": "marc.agent",
-      "email": "marc@example.com",
-      "password": "password123",
-      "firstName": "Marc",
-      "lastName": "Dubois",
-      "favorites": []
-    }
-  ],
   "balades": [
     {
       "id": 1,
-      "title": "Sentier des vignobles de Lavaux",
-      "description": "Découvrez la beauté des terrasses viticoles de Lavaux, inscrites au patrimoine mondial de l'UNESCO.",
+      "title": "Sentier côtier",
+      "subtitle": "Bord de mer",
+      "description": "Une magnifique balade le long du littoral avec des vues spectaculaires sur le lac Léman.",
       "difficultyLevel": "moyen",
       "duration": 180,
       "distance": 8.5,
       "region": "Vaud",
+      "category": "Lacs",
+      "categories": ["Lacs", "Monuments"],
       "startPoint": { "lat": 46.5079, "lng": 6.6824 },
-      "imageUrl": "assets/images/lavaux.jpg",
-      "createdAt": "2024-01-15"
+      "imageUrl": "assets/images/coastal-path.jpg",
+      "createdAt": "2024-01-15T00:00:00.000Z"
     },
     {
       "id": 2,
-      "title": "Tour du lac de Joux",
-      "description": "Une balade agréable autour du plus grand lac du Jura suisse.",
-      "difficultyLevel": "facile",
+      "title": "Vallée alpine",
+      "subtitle": "Haute montagne",
+      "description": "Exploration des sommets alpins avec panoramas à couper le souffle sur les vallées environnantes.",
+      "difficultyLevel": "difficile",
       "duration": 240,
-      "distance": 15.2,
-      "region": "Jura vaudois",
-      "startPoint": { "lat": 46.6234, "lng": 6.2728 },
-      "imageUrl": "assets/images/lac-joux.jpg",
-      "createdAt": "2024-02-05"
+      "distance": 12,
+      "region": "Valais",
+      "category": "Montagnes",
+      "categories": ["Montagnes"],
+      "startPoint": { "lat": 46.1, "lng": 7.2 },
+      "imageUrl": "assets/images/alpine-valley.jpg",
+      "createdAt": "2024-02-20T00:00:00.000Z"
     },
     {
       "id": 3,
-      "title": "Chemins des blés",
-      "description": "Traversée bucolique des champs et forêts de la région d'Echallens.",
+      "title": "Chemin d'automne",
+      "subtitle": "Forêt colorée",
+      "description": "Immersion dans les forêts aux couleurs automnales, un spectacle naturel enchanteur.",
       "difficultyLevel": "facile",
       "duration": 120,
-      "distance": 6.8,
-      "region": "Gros-de-Vaud",
-      "startPoint": { "lat": 46.6413, "lng": 6.6351 },
-      "imageUrl": "assets/images/bles.jpg",
-      "createdAt": "2024-03-10"
+      "distance": 5,
+      "region": "Genève",
+      "category": "Forêts",
+      "categories": ["Forêts"],
+      "startPoint": { "lat": 46.2, "lng": 6.1 },
+      "imageUrl": "assets/images/autumn-path.jpg",
+      "createdAt": "2024-03-10T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "Colline rurale",
+      "subtitle": "Campagne paisible",
+      "description": "Découverte du paysage bucolique jurassien à travers champs et pâturages.",
+      "difficultyLevel": "facile",
+      "duration": 90,
+      "distance": 4.2,
+      "region": "Jura",
+      "category": "Monuments",
+      "categories": ["Monuments", "Forêts"],
+      "startPoint": { "lat": 47.1, "lng": 7.0 },
+      "imageUrl": "assets/images/rural-hill.jpg",
+      "createdAt": "2024-03-15T00:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "title": "Château de Chillon",
+      "subtitle": "Joyau médiéval",
+      "description": "Exploration des alentours du célèbre château médiéval avec vue sur le lac Léman.",
+      "difficultyLevel": "facile",
+      "duration": 60,
+      "distance": 3.5,
+      "region": "Vaud",
+      "category": "Châteaux",
+      "categories": ["Châteaux", "Monuments"],
+      "startPoint": { "lat": 46.4141, "lng": 6.9273 },
+      "imageUrl": "assets/images/chillon-castle.jpg",
+      "createdAt": "2024-02-05T00:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "title": "Abbaye de Saint-Maurice",
+      "subtitle": "Patrimoine religieux",
+      "description": "Circuit autour de l'abbaye millénaire et découverte du patrimoine religieux valaisan.",
+      "difficultyLevel": "facile",
+      "duration": 45,
+      "distance": 2.8,
+      "region": "Valais",
+      "category": "Religieuses",
+      "categories": ["Religieuses", "Monuments"],
+      "startPoint": { "lat": 46.2190, "lng": 7.0024 },
+      "imageUrl": "assets/images/saint-maurice-abbey.jpg",
+      "createdAt": "2024-01-30T00:00:00.000Z"
     }
   ],
-  "pointsOfInterest": [
+  "users": [
     {
       "id": 1,
-      "baladeId": 1,
-      "title": "Tour de Marsens",
-      "description": "Vestige médiéval datant du XIIIe siècle, cette tour offre une vue imprenable sur le Léman.",
-      "historicalPeriod": "Moyen Âge",
-      "imageUrl": "assets/images/tour-marsens.jpg",
-      "location": { "lat": 46.5085, "lng": 6.6844 }
+      "username": "user1",
+      "email": "user1@example.com",
+      "favoriteBalades": [1, 3]
     },
     {
       "id": 2,
-      "baladeId": 1,
-      "title": "Église Saint-Vincent",
-      "description": "Église romane du XIe siècle avec des fresques remarquables.",
-      "historicalPeriod": "Moyen Âge",
-      "imageUrl": "assets/images/eglise-saint-vincent.jpg",
-      "location": { "lat": 46.5092, "lng": 6.6890 }
-    },
-    {
-      "id": 3,
-      "baladeId": 2,
-      "title": "Abbaye du Lac de Joux",
-      "description": "Fondée au 12e siècle par les moines prémontrés, l'abbaye est aujourd'hui un lieu culturel important.",
-      "historicalPeriod": "Moyen Âge",
-      "imageUrl": "assets/images/abbaye-joux.jpg",
-      "location": { "lat": 46.6245, "lng": 6.2765 }
+      "username": "user2",
+      "email": "user2@example.com",
+      "favoriteBalades": [2, 5]
     }
   ]
 }
